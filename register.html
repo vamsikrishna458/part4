@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 20%;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+input[type="password"] {
+  display: block;
+  margin: 0;
+  width: 20%;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+body {
+  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  color: #404040;
+  background: #0ca3d2;
+}
+
+.container {
+  margin: 80px auto;
+  width: 640px;
+}
+
+
+</style>
+</head>
+
+<script type="text/javascript">
+
+function validateRegisterForm() {
+    var name = document.forms["myForm"]["fname"].value;
+    if (name == null || name == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+    var password = document.forms["myForm"]["pwd"].value;
+    if (password == null || password == "") {
+        alert("Password must be filled out");
+        return false;
+    }
+    var rpassword = document.forms["myForm"]["rpwd"].value;
+    if (rpassword == null || rpassword == "") {
+        alert("Re enter Password must be filled out");
+        return false;
+    }
+    var mail = document.forms["myForm"]["email"].value;
+    if (mail == null || mail == "") {
+        alert("Email must be filled out");
+        return false;
+    }
+    
+    var address = document.forms["myForm"]["address"].value;
+    if (address == null || address == "") {
+        alert("Address must be filled out");
+        return false;
+    }
+    
+    
+    var country = document.forms["myForm"]["country"].value;
+    if (country == null || country == "") {
+        alert("Country must be filled out");
+        return false;
+    }
+}
+</script>
+<body>
+
+<h1>Register Here</h1>
+
+<form name="myForm"
+onsubmit="return validateRegisterForm()" method="post">
+ User Name: <input type="text" name="fname"><br>
+password: <input type="password" name="pwd"><br>
+Re-password: <input type="password" name="rpwd"><br>
+Email: <input type="text" name="email"><br>
+Address: <input type="text" name="address"><br>
+Country: <input list="country" name="country">
+<datalist id="country">
+  <option value="India">
+  <option value="Japan">
+  <option value="China">
+  <option value="America">
+  <option value="Africa">
+</datalist>
+
+
+&nbsp;&nbsp;<input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>

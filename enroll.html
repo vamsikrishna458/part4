@@ -1,0 +1,75 @@
+
+<!doctype html>
+<html lang=''>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Enroll</title>
+   <style type="text/css">
+   header {
+  text-align: center;
+  font-size: 72px;
+  line-height: 108px;
+  height: 108px;
+  background: #335C7D;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  transition: all 0.4s ease;
+}
+
+h1 {
+	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.3999996185303px;
+}
+.container {
+  margin-top: 51px;
+  width: 640px;
+  margin-left: 263px;
+}
+input{
+width:300px;
+}
+label { 
+    width: 100px;
+    display: inline-block;
+}
+body{
+background-color:#FF0FF;
+width: auto;
+height: auto;
+}
+   </style>
+</head>
+<body>
+<header></header>
+
+
+   <a href='home.html'><span>Home</span></a>
+   <a href='enroll.html'><span>Enroll Subject</span></a>
+   <a href='Contact.html'><span>Contact</span></a>
+   
+ 
+  <section>
+    <div>
+    <h1>Select Course</h1>
+    <form action="enroll">
+  <input list="courses" name="course" placeholder="Select Specification" required="required">
+  <datalist id="courses">
+    <option value="Computer Science">Computer Science</option>
+    <option value="Electrical">Electrical</option>
+    <option value="Electronics">Electronics</option>
+    <option value="English and Communications">English and Communications</option>
+    <option value="Arts and Science">Arts and Science</option>
+  </datalist>
+  <p class="submit"><input type="submit" name="commit" value="Add to cart"></p>
+  
+  </form>
+    </div>
+    </section>
+</body>
+</html>

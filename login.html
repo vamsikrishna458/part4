@@ -1,0 +1,104 @@
+
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 62.5%;
+	font-family: Helvetica, sans-serif;
+	background: url(images/stripe.png) repeat;
+}
+
+p {
+	font-size: 1.3em;
+	margin-bottom: 15px;
+}
+
+#page-wrap {
+	width: 660px;
+	background: white;
+	padding: 20px 50px 20px 50px;
+	margin: 20px auto;
+	min-height: 500px;
+	height: auto !important;
+	height: 500px;
+}
+
+#contact-area {
+	width: 600px;
+	margin-top: 25px;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 471px;
+	font-family: Helvetica, sans-serif;
+	font-size: 1.4em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ccc;
+}
+
+#contact-area textarea {
+	height: 90px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 2px solid #900;
+}
+
+#contact-area input.submit-button {
+	width: 100px;
+	float: right;
+}
+
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.4em;
+}
+</style>
+<script type="text/javascript">
+
+function validateForm() {
+    var name = document.forms["myForm"]["fname"].value;
+    if (name == null || name == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+    var password = document.forms["myForm"]["pwd"].value;
+    if (password == null || password == "") {
+        alert("Password must be filled out");
+        return false;
+    }
+}
+</script>
+</head>
+
+<body>
+	<div id="page-wrap">
+		<div id="contact-area">
+<h1>Login here</h1>
+<form name="myForm"
+onsubmit="return validateForm()" method="post">
+ User Name: <input type="text" name="fname"><br>
+password: <input type="text" name="pwd">
+<input type="submit" value="Submit" name="Login">
+<a href="register.html">Register here</a>
+
+</form>
+</div>
+</div>
+
+
+</body>
+</html>

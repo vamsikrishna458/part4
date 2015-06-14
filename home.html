@@ -1,0 +1,72 @@
+
+<!doctype html>
+
+<html >
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<head>
+   <title>Home</title>
+   <style type="text/css">
+   header {
+  text-align: center;
+  font-size: 72px;
+  line-height: 108px;
+  height: 108px;
+  background: #335C7D;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  transition: all 0.4s ease;
+ 
+}
+
+h1 {
+	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.3999996185303px;
+}
+.container {
+  margin-top: 51px;
+  width: 640px;
+  margin-left: 263px;
+}
+   </style>
+</head>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("#content").hide();
+    });
+    $("#show").click(function(){
+        $("#content").show();
+    });
+});
+
+</script>
+<body>
+<header></header>
+ 
+ <a href='home.html'><span>Home</span></a>
+   <a href='enroll.html'><span>Enroll Subject</span></a>
+   <a href='Contact.html'><span>Contact</span></a>
+  
+
+ <section class="container">
+ <div id="content">
+ Welcome to student Registration Portal
+ 
+ We are glad to serve you with our online training
+ 
+ The fee is miminimal and need to pa online using payment gateway
+ 
+ </div>
+ 
+ <button id="show" >Show me</button>
+ <button id="hide">Hide</button>
+</section>
+</body>
+
+</html>
